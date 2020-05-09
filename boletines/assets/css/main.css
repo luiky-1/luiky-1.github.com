@@ -1,0 +1,145 @@
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.title{
+  text-transform: capitalize;
+  text-align: center;
+}
+.container{
+  background: #59C173;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: #d500f9;
+}
+.img{
+  max-width: 100%;
+}
+.content{
+  max-width: 960px;
+  width:100%;
+  max-height: 500px;
+  background-color: white;
+  height: 80vh;
+/*  box-shadow: diferencia horizontal, diferencia vertical,desenfoque,amplitud, color*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+  position: relative;
+  overflow: scroll;
+}
+.content{
+  padding:1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #642B73;
+}
+th{
+  display: none;
+}
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.fa-star{
+  color:#ffc400;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.close{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #642B73;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 6px rgb(0,0,0,0.23);
+  font-weight: 300;
+  cursor:pointer;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+a:hover{
+  opacity: 0.8;
+}
+.table{
+  width:100%;
+  border-spacing: 0;
+}
+.table th, .table td{
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even){background-color: #f3e5f5;}
+
+.title-item{
+  /*border-bottom-style: solid;
+  border-color: #ffc400;
+  border-width: 2px;*/
+  border-bottom: solid 2px #ffc400;
+  padding-bottom: 1em;
+  /*padding: arriba derecha abajo izquierda... con cuatro valores*/
+  /*padding: arriba/abajo derecha/izquierda... con dos valores*/
+  font-size: 2em;
+}
+.address{
+  font-weight: bold;
+  color:#642B73;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+  width: 350px;
+}
+.position{
+  background-color: #ffc400;
+  color:blue;
+  padding: 0.5em;
+  /*border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;*/
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+@media (min-width:900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    width: auto;
+    font-size:1em;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    .content{
+        padding: 1.8em;
+    }
+  }
+}
+@media (min-height:550px){
+  .content{
+    height:500px;
+  }
+}
